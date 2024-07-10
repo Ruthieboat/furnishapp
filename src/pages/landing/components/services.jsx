@@ -7,16 +7,24 @@ const Services = () => {
       {K.SERVICES.map((service, index) => {
         return (
           <div 
-          key={index} className={`bg-[${service.bgColor}]`} style={{ backgroundColor: service.bgColor }} >
-            <span>
-              <Handshake />
+          key={index} 
+          className={`flex flex-col p-4`} 
+          style={{ backgroundColor: service.bgColor }} >
+            
+            <span
+            className="w-fit p-2 rounded-full text-white "
+            style={{backgroundColor: service.iconBg}}>
+              <Handshake className=""/>
             </span>
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
+
+            <h3 className="font-bold">{service.title}</h3>
+            <p className="text-black/80">{service.description}</p>
           </div>
         );
       })}
-    
+      <div>
+        
+      </div>
     </div> 
   ); 
 };

@@ -1,24 +1,26 @@
+import { PlayIcon } from "lucide-react";
 import { abImg } from "../../../assets";
 
 
 const About = () => {
   return (
 
-    <div className="flex flex-col">
-      <div className="">
-        <div className="background-cont "></div>
+    <div className="flex relative ">
+      <img src={abImg} alt="aboutpic" className="w-full h-full vh- " />
 
-        <div>
-          <img src={abImg} alt="aboutpic" />
-        </div>
+      <div className=" flex flex-col content-center justify-center top-0 left-0 p-10 gap-10 absolute">
+        <div className="font-semibold text-[#F3BBB7] text-[20px]">ABOUT RUENO</div>
+        <h2 className="font-bold text-white text-5xl">Quality Makes the <br />Belief for Customers</h2>
+        <p className=" w-90 text-[21px] py-6px text-white ">Far far away, behind the word mountains, far from the countries Vokalia <br />and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove <br />right at the coast of the Semantics, a large language ocean. </p>
+        <span>
+          <button className="bg-[#F3BBB7] rounded-2xl animate-spin ">
+            <PlayIcon className="text-black"/>
+          </button>
+          <p className="text-[#F3BBB7] font-bold ">Watch Video</p>
+        </span>
+
       </div>
 
-      <div className="flex flex-row p-10">
-        <span className="font-thin text-black text-sm">ABOUT FURNISH</span>
-        <span className="font-bold text-black py-5 text-5xl">Quality Makes the Belief for <br />Customers</span>
-      </div>
-
-      <p className=" w-90 text-sm py-3px ">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. </p>
     </div>
   )
 };
