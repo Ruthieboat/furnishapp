@@ -22,10 +22,18 @@ const Footer = () => {
           <p>Best Support</p>
         </span>
         <span>
-          <p className="text-2xl font-semibold gap-3">Recent Posts</p>
+          <p className="text-2xl font-semibold gap-3">Our shops</p>
+          <p>Accra, Ghana</p>
+          <p>Abuja, Nigeria</p>
+          <p>Chicago, USA</p>
+          <p>Lome, Togo</p>
         </span>
         <span>
           <p className="text-2xl font-semibold">Have a Questions?</p>
+          <p>How much are the accent chairs</p>
+          <p>On delivery</p>
+          <p>What sre our payment methods?</p>
+          <p>How to book delivery</p>
         </span>
       </div>
 
